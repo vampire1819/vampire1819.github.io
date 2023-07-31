@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>It's me, Audrey</title>
+</head>
+<body style="background-image: url(Background\ Image\ 1.jpg)">
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+
+        body {
+          font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* Style the header */
+        .header {
+          grid-area: header;
+          padding: 20px;
+          text-align: center;
+          font-size: 35px;
+        }
+
+        /* The grid container */
+        .grid-container {
+          display: grid;
+          grid-template-areas:
+            'header header header header header header'
+            'left left middle middle right right'
+            'footer footer footer footer footer footer';
+          /* grid-column-gap: 10px; - if you want gap between the columns */
+        }
+
+        .left,
+        .middle,
+        .right {
+          padding: 10px;
+          height: 490px; /* Should be removed. Only for demonstration */
+        }
+
+        /* Style the left column */
+        .left {
+          grid-area: left;
+        }
+
+        /* Style the middle column */
+        .middle {
+          grid-area: middle;
+        }
+
+        /* Style the right column */
+        .right {
+          grid-area: right;
+        }
+
+        /* Style the footer */
+        .footer {
+          grid-area: footer;
+          padding: 10px;
+          text-align: center;
+        }
+
+        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+        @media (max-width: 600px) {
+          .grid-container  {
+            grid-template-areas:
+              'header header header header header header'
+              'left left left left left left'
+              'middle middle middle middle middle middle'
+              'right right right right right right'
+              'footer footer footer footer footer footer';
+          }
+        }
+        a:link {
+  color: tomato;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgba(0, 161, 161, 0.911);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(0, 66, 66);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: tomato;
+  background-color: transparent;
+  text-decoration: underline;
+}
+        </style>
+        </head>
+        <body>
+            <img src="Landing Page 1.jpg" alt="Audrey" style="width: 30%; height: 30%; margin-left: 37%;">
+            <div class="grid-container">
+          <div class="header">
+            <h2 style="color: tomato;">Hi, it's me, Audrey!</h2>
+          </div>
+          <div class="left" style="margin-left: 5%; margin-right: 10%; margin-top: 10%; color: teal; font-size: large; border-style: dashed; border-color: tomato; text-align: left;">I am an online English teacher with a TESOL certificate.
+            <br>
+            I have been teaching English for 4 years now.
+            <br>
+            I have had students of many different nationalities,
+            <br>
+            levels and ages.
+            <br>
+            I'm also a proud homeschooling mom for my 2 boys.
+            <br>
+            <br>
+            <br>
+            I love cooking food from different cuisines
+            <br>
+            and baking sweet and savory pastries.
+            <br>
+            Here are some of my <a href="Food Creations.html" target="_blank"><strong><underline>specialties</underline></strong></a>.
+            <br>
+            I also sell baked goods and run my own online grocery 
+            <br>
+            as side hustles.
+            <br>
+            <br>
+            <a href="https://store.sarisuki.com/chonky-pantry" target="_blank"><img src="Chonky Pantry Logo.jpg" alt="Chonky Pantry Online Grocery" style="width: 20%; margin-left: 40%;"></a>
+            <p style="text-align: center; font-size: large;"><strong>Shop now!</strong></p>
+        </div>
+        <div class="middle" style="margin-left: 9%; margin-right: 30%; margin-top: 16%; color: teal; border-style: dashed; border-color: tomato; font-size: large;">My hobbies are playing online games.
+        <br>
+            <a href="https://honkaiimpact3.hoyoverse.com/global/en-us/fab" target="_blank"><img src="Honkai Impact.jpg" width="40%" style="margin-left: 30%; margin-top: 15%;"></a>
+            <br>
+            <p style="text-align: center;"><strong>Honkai Impact 3</strong></p>
+        <br>
+        <br>
+            <a href="https://en.onmyojigame.com/" target="_blank"><img src="Onmyoji.jpg" width="40%" style="margin-left: 30%; margin-top: 5%;"></a>
+        <br>
+            <p style="text-align: center;"><strong>Onmyoji</strong></p>
+        </div>
+          <div class="right" style="margin-right: 20%; margin-top: 15%; color: teal; border-style: dashed; border-color: tomato; font-size: large;"><p style="text-align: left;">I'm currently attending a coding bootcamp, 
+            <br>
+            hoping to be a full-stack web developer.</p>
+        <a href="kodego.ph" target="_blank"><img src="Kodego.png" width="25%" style="margin-left: 30%;"></a>
+        <br>
+        <p style="text-align: left;">I'm also exploring content creation
+            <br>
+            with plans to start a YouTube channel
+            <br>
+            where I can upload
+            <br>
+            <ul>
+                <li>anime song covers</li>
+                <li>recipe tutorials</li>
+                <li>short English lessons</li>
+            </ul>
+            Hope to see you soon on</p>
+            <img src="YT Icon.png" width="20%" style="margin-left: 35%;">
+    </div>
+        <br>
+        <br>
+          <div class="footer">
+          <p style="color: tomato; font-size: larger;"><strong>Follow me on my socials.</strong></p>
+          <a href="https://www.facebook.com/audrey.tenorio.9"><img src="FB Icon.png" alt="FB" style="width: 5%;"></a><a href="https://www.instagram.com/dreitenorio/"><img src="IG Icon.jpg" alt=IG width="5%" style="margin-left: 10%;"></a>
+          </div>
+        </div>
+</body>
+</html>
